@@ -70,6 +70,10 @@ foreach ($fragment in 'workflow_dispatch:', 'actions/configure-pages@v5', 'actio
   }
 }
 
+if ($workflow -notmatch "hugo-version: '0.167.0'") {
+  throw 'Expected workflow Hugo version to support Language.Locale.'
+}
+
 if (-not (Test-Path 'README.md')) {
   throw 'Expected authoring guide.'
 }
