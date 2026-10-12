@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <div class="site-shell page-layout">
+    <header class="page-heading">
+      <p class="eyebrow">Archive</p>
+      <h1>{{ .Title }}</h1>
+    </header>
+    {{ $pages := .RegularPages.ByDate.Reverse }}
+    {{ if $pages }}
+      <div class="content-grid">
+        {{ range $pages }}{{ partial "content-card.html" . }}{{ end }}
+      </div>
+    {{ else }}
+      <p class="empty-state">Nothing here yet.</p>
+    {{ end }}
+  </div>
+{{ end }}

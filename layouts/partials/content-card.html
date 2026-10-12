@@ -1,0 +1,12 @@
+<article class="content-card">
+  {{ with .Params.cover }}
+    <a class="card-media" href="{{ $.RelPermalink }}">
+      <img src="{{ . | relURL }}" alt="{{ $.Params.coverAlt | default $.Title }}" loading="lazy">
+    </a>
+  {{ end }}
+  <div class="card-copy">
+    <p class="card-kicker">{{ .Section | title }}{{ with .Date }} <span aria-hidden="true">/</span> <time datetime="{{ .Format "2006-01-02" }}">{{ .Format "Jan 2, 2006" }}</time>{{ end }}</p>
+    <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    {{ with .Params.summary | default .Summary }}<p>{{ . }}</p>{{ end }}
+  </div>
+</article>

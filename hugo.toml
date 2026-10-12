@@ -1,0 +1,13 @@
+baseURL = "https://xzzwang26.github.io/"
+locale = "en-us"
+title = "xzwang's life"
+enableRobotsTXT = true
+
+[params]
+  description = "A personal space for projects and notes."
+  author = "xzwang"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
