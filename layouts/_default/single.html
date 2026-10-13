@@ -9,7 +9,10 @@
       {{ end }}
     </header>
     {{ with .Params.cover }}
-      <figure class="entry-cover"><img src="{{ . | relURL }}" alt="{{ $.Params.coverAlt | default $.Title }}"></figure>
+      <figure class="entry-cover">
+        <img src="{{ . | relURL }}" alt="{{ $.Params.coverAlt | default $.Title }}">
+        {{ with $.Params.imageCaption }}<figcaption class="entry-image-caption">({{ . }})</figcaption>{{ end }}
+      </figure>
     {{ end }}
     <div class="entry-content">{{ .Content }}</div>
     {{ with .Params.externalURL }}<p><a class="text-link" href="{{ . }}" rel="noopener noreferrer" target="_blank">View the project</a></p>{{ end }}
