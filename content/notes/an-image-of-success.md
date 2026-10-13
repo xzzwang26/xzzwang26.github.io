@@ -9,4 +9,4 @@ coverAlt: "Plant-covered apartment balconies rising beneath a blue sky"
 
 (Plant-covered apartment balconies rising beneath a blue sky.)
 
-I chose this image because it shows a version of technology that works with nature instead of treating nature as something outside the city. The building suggests a future in which design, engineering, and environmental systems help dense urban spaces become cooler, healthier, and more resilient. For me, technological success is not only faster or more powerful tools; it is a city where people and ecosystems can flourish together.
+This picture shows a version of technology that works with nature instead of treating nature as something outside the city. The building suggests a future in which design, engineering, and environmental systems help dense urban spaces become cooler, healthier, and more resilient. For me, technological success is not only faster or more powerful tools; it is a city where people and ecosystems can flourish together.
