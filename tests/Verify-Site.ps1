@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop'
 
 $config = Get-Content -Raw 'hugo.toml'
 
-if ($config -notmatch 'title = "xzwang''s life"') {
+if ($config -notmatch 'title = "xzwang"') {
   throw 'Expected configured title.'
 }
 

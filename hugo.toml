@@ -1,6 +1,6 @@
 baseURL = "https://xzzwang26.github.io/"
 locale = "en-us"
-title = "xzwang's life"
+title = "xzwang"
 enableRobotsTXT = true
 
 [params]
